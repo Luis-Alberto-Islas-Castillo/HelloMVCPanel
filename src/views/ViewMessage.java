@@ -35,8 +35,10 @@ public class ViewMessage extends javax.swing.JPanel {
         jlMessage.setText("                      jLabel1");
         jlMessage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        jbtnHello.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jbtnHello.setText("Hello");
 
+        jbtnBye.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jbtnBye.setText("Bye");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -58,7 +60,7 @@ public class ViewMessage extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(51, 51, 51)
                 .addComponent(jlMessage)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbtnHello)
                     .addComponent(jbtnBye))
