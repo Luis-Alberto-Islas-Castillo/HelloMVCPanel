@@ -51,16 +51,22 @@ public class ViewSuma extends javax.swing.JPanel {
         jLabel_resultado.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_resultado.setText("Resultado");
 
+        jTextField_resultado.setForeground(new java.awt.Color(255, 0, 0));
+
         jButton_suma.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_suma.setForeground(new java.awt.Color(0, 0, 102));
         jButton_suma.setText("+");
 
         jButton_resta.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_resta.setForeground(new java.awt.Color(0, 0, 102));
         jButton_resta.setText("-");
 
         jButton_multiplicacion.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_multiplicacion.setForeground(new java.awt.Color(0, 0, 102));
         jButton_multiplicacion.setText("*");
 
         jButton_divicion.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_divicion.setForeground(new java.awt.Color(0, 0, 102));
         jButton_divicion.setText("/");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -68,43 +74,44 @@ public class ViewSuma extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(108, 108, 108)
+                .addComponent(jTextField_numero1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton_suma)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton_resta)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton_multiplicacion)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton_divicion)
-                        .addContainerGap(111, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(28, 28, 28)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(jLabel_resultado)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTextField_resultado))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel_numero1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel_numero2))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField_numero2)
-                                    .addComponent(jTextField_numero1)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel_resultado)
-                                .addGap(18, 18, 18)
-                                .addComponent(jTextField_resultado)))
-                        .addGap(32, 32, 32))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(121, 121, 121)
-                .addComponent(jLabel1)
-                .addGap(0, 0, Short.MAX_VALUE))
+                                .addComponent(jTextField_numero2, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(79, 79, 79)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton_suma)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton_resta)
+                        .addGap(36, 36, 36)
+                        .addComponent(jButton_multiplicacion)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton_divicion)))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(25, 25, 25)
                 .addComponent(jLabel1)
-                .addGap(39, 39, 39)
+                .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel_numero1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField_numero1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -122,7 +129,7 @@ public class ViewSuma extends javax.swing.JPanel {
                     .addComponent(jButton_resta)
                     .addComponent(jButton_multiplicacion)
                     .addComponent(jButton_divicion))
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
